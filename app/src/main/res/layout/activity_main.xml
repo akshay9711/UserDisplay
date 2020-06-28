@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwall"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/randomButton"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileBack"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/holo_orange_dark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/proback" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileBack"
+        app:layout_constraintEnd_toEndOf="@+id/profileBack"
+        app:layout_constraintStart_toStartOf="@+id/profileBack"
+        app:layout_constraintTop_toTopOf="@+id/profileBack"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:layout_marginTop="132dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText">
+
+        <TextView
+            android:id="@+id/phoneNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#0B0B0B"
+            android:text="Phone no."
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#0B0B0B"
+            android:text="City"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#0B0B0B"
+            android:text="Email"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#0B0B0B"
+            android:text="Address"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="132dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nameText">
+
+        <TextView
+            android:id="@+id/myPhoneNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#515151"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/myCityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#515151"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/myEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#515151"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/myAddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#515151"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/allerta"
+        android:shadowColor="#0B0B0B"
+        android:textColor="#FFFCFC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/randomButton"
+        app:layout_constraintEnd_toEndOf="@+id/profileBack"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/profileBack"
+        app:layout_constraintTop_toBottomOf="@+id/profileBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
